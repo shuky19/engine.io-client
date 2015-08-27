@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "has-cors": "1.0.3",
-    "ws": "git://github.com/shuky19/ws#proxy_support",
-    "xmlhttprequest": "git://github.com/shuky19/node-XMLHttpRequest#proxy_support",
+    "ws": "git+https://github.com/shuky19/ws#proxy_support",
+    "xmlhttprequest": "git+https://github.com/shuky19/node-XMLHttpRequest#proxy_support",
     "component-emitter": "1.1.2",
     "indexof": "0.0.1",
     "engine.io-parser": "1.2.1",
