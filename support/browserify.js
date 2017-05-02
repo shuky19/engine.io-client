@@ -27,7 +27,8 @@ function build(fn){
     entries: [ path ],
     insertGlobalVars: { global: glob },
     standalone: 'eio'
-  }).bundle();
+  })
+  .bundle();
 
   bundle.on('error', function (err) {
     fn(err);
@@ -46,5 +47,6 @@ function build(fn){
 
 function glob(){
   return 'typeof self !== "undefined" ? self : '
-    + 'typeof window !== "undefined" ? window : {}';
+    + 'typeof window !== "undefined" ? window : '
+    + 'typeof global !== "undefined" ? global : {}';
 }
